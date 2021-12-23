@@ -1,0 +1,1134 @@
+/*
+
+Templates for New Entries:
+
+Building:
+
+    {
+      "name": "",
+      "power_draw_mw": "",
+      "conveyer_inputs": "",
+      "conveyer_outputs": "",
+      "pipeline_inputs": "",
+      "pipeline_outputs": ""
+    },
+
+Part:
+
+    {
+        "name": "",
+        "produced_in": "",
+        "qty": ,
+        "prod_time_sec": ,
+        "prod_per_min": ,
+        "ingredients" : [
+            {
+                "name" : "",
+                "req_amount" : 
+            },
+            {
+                "name" : "",
+                "req_amount" : 
+            },
+            {
+                "name" : "",
+                "req_amount" : 
+            },
+            {
+                "name" : "",
+                "req_amount" : 
+            }
+        ]
+    },
+
+*/
+{
+    "buildings": [
+        {
+            "name": "Assembler",
+            "power_draw_mw": "15",
+            "conveyer_inputs": "2",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "0"
+        },
+        {
+            "name": "Smelter",
+            "power_draw_mw": "4",
+            "conveyer_inputs": "1",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "0"
+        },
+        {
+            "name": "Constructor",
+            "power_draw_mw": "4",
+            "conveyer_inputs": "1",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "0"
+        },
+        {
+            "name": "Foundry",
+            "power_draw_mw": "16",
+            "conveyer_inputs": "2",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "0"
+        },
+        {
+            "name": "Manufacturer",
+            "power_draw_mw": "55",
+            "conveyer_inputs": "4",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "0"
+        },
+        {
+            "name": "Refinery",
+            "power_draw_mw": "30",
+            "conveyer_inputs": "1",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "1",
+            "pipeline_outputs": "1"
+        },
+        {
+            "name": "Refinery",
+            "power_draw_mw": "30",
+            "conveyer_inputs": "1",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "1",
+            "pipeline_outputs": "1"
+        },
+        {
+            "name": "Resource Well Extractor",
+            "power_draw_mw": "150",
+            "conveyer_inputs": "0",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "0"
+        },
+        {
+            "name": "Oil Extractor",
+            "power_draw_mw": "40",
+            "conveyer_inputs": "0",
+            "conveyer_outputs": "0",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "1"
+        },
+        {
+            "name": "Water Extractor",
+            "power_draw_mw": "20",
+            "conveyer_inputs": "0",
+            "conveyer_outputs": "0",
+            "pipeline_inputs": "0",
+            "pipeline_outputs": "1"
+        },
+        {
+            "name": "Blender",
+            "power_draw_mw": "75",
+            "conveyer_inputs": "2",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "2",
+            "pipeline_outputs": "1"
+        },
+        {
+            "name": "Packager",
+            "power_draw_mw": "10",
+            "conveyer_inputs": "1",
+            "conveyer_outputs": "1",
+            "pipeline_inputs": "1",
+            "pipeline_outputs": "1"
+        }
+    ],
+    "items": [
+        {
+            "name": "AI Limiter",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 12,
+            "prod_per_min": 5,
+            "ingredients": [
+                {
+                    "name": "Copper Sheets",
+                    "req_amount": 5
+                },
+                {
+                    "name": "Quickwire",
+                    "req_amount": 20
+                }
+            ]
+        },
+        {
+            "name": "Adaptive Control Unit",
+            "produced_in": "Manufacturer",
+            "qty": 2,
+            "prod_time_sec": 120,
+            "prod_per_min": 1,
+            "ingredients": [
+                {
+                    "name": "Heavy Modular Frames",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Computer",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Circuit Board",
+                    "req_amount": 10
+                },
+                {
+                    "name": "Automated Wiring",
+                    "req_amount": 15
+                }
+            ]
+        },
+        {
+            "name": "Alclad Aluminum Sheet",
+            "produced_in": "Assembler",
+            "qty": 3,
+            "prod_time_sec": 6,
+            "prod_per_min": 30,
+            "ingredients": [
+                {
+                    "name": "Aluminum Ingots",
+                    "req_amount": 3
+                },
+                {
+                    "name": "Copper Ingot",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Alumina Scrap",
+            "produced_in": "Refinery",
+            "qty": 6,
+            "prod_time_sec": 1,
+            "prod_per_min": 360,
+            "ingredients": [
+                {
+                    "name": "Alumina Solution",
+                    "req_amount": 4
+                },
+                {
+                    "name": "Coal",
+                    "req_amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Alumina Solution",
+            "produced_in": "Refinery",
+            "qty": 12,
+            "prod_time_sec": 6,
+            "prod_per_min": 120,
+            "ingredients": [
+                {
+                    "name": "Bauxite Ore",
+                    "req_amount": 12
+                },
+                {
+                    "name": "Water",
+                    "req_amount": 18
+                }
+            ]
+        },
+        {
+            "name": "Aluminum Casing",
+            "produced_in": "Constructor",
+            "qty": 2,
+            "prod_time_sec": 2,
+            "prod_per_min": 60,
+            "ingredients": [
+                {
+                    "name": "Aluminum Ingots",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Aluminum Ingots",
+            "produced_in": "Smelter",
+            "qty": 4,
+            "prod_time_sec": 4,
+            "prod_per_min": 60,
+            "ingredients": [
+                {
+                    "name": "Alumina Scrap",
+                    "req_amount": 6
+                },
+                {
+                    "name": "Silica",
+                    "req_amount": 5
+                }
+            ]
+        },
+        {
+            "name": "Assembly Director System",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 80,
+            "prod_per_min": 0.75,
+            "ingredients": [
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                }
+            ]
+        },
+        {
+            "name": "Automated Wiring",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 24,
+            "prod_per_min": 2.5,
+            "ingredients": [
+                {
+                    "name": "Stators",
+                    "req_amount": 1
+                },
+                {
+                    "name": "Cable",
+                    "req_amount": 20
+                }
+            ]
+        },
+        {
+            "name": "Bauxite Ore",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Black Powder",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 8,
+            "prod_per_min": 7.5,
+            "ingredients": [
+                {
+                    "name": "Coal",
+                    "req_amount": 1
+                },
+                {
+                    "name": "Sulfur",
+                    "req_amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Cable",
+            "produced_in": "Constructor",
+            "qty": 1,
+            "prod_time_sec": 2,
+            "prod_per_min": 30,
+            "ingredients": [
+                {
+                    "name": "Wire",
+                    "req_amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Caterium Ingot",
+            "produced_in": "Smelter",
+            "qty": 1,
+            "prod_time_sec": 4,
+            "prod_per_min": 15,
+            "ingredients": [
+                {
+                    "name": "Caterium Ore",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Caterium Ore",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Circuit Board",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 8,
+            "prod_per_min": 7.5,
+            "ingredients": [
+                {
+                    "name": "Copper Sheets",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Plastic",
+                    "req_amount": 4
+                }
+            ]
+        },
+        {
+            "name": "Coal",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Computer",
+            "produced_in": "Manufacturer",
+            "qty": 1,
+            "prod_time_sec": 24,
+            "prod_per_min": 2.5,
+            "ingredients": [
+                {
+                    "name": "Circuit Board",
+                    "req_amount": 10
+                },
+                {
+                    "name": "Cable",
+                    "req_amount": 9
+                },
+                {
+                    "name": "Plastic",
+                    "req_amount": 18
+                },
+                {
+                    "name": "Screws",
+                    "req_amount": 52
+                }
+            ]
+        },
+        {
+            "name": "Concrete",
+            "produced_in": "Constructor",
+            "qty": 1,
+            "prod_time_sec": 4,
+            "prod_per_min": 15,
+            "ingredients": [
+                {
+                    "name": "Limestone Ore",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Cooling System",
+            "produced_in": "Blender",
+            "qty": 1,
+            "prod_time_sec": 10,
+            "prod_per_min": 6,
+            "ingredients": [
+                {
+                    "name": "Heat Sink",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Rubber",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Water",
+                    "req_amount": 5
+                },
+                {
+                    "name": "Nitrogen Gas",
+                    "req_amount": 25
+                }
+            ]
+        },
+        {
+            "name": "Copper Ingot",
+            "produced_in": "Smelter",
+            "qty": 1,
+            "prod_time_sec": 2,
+            "prod_per_min": 30,
+            "ingredients": [
+                {
+                    "name": "Copper Ore",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Copper Ore",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Copper Sheets",
+            "produced_in": "Constructor",
+            "qty": 1,
+            "prod_time_sec": 6,
+            "prod_per_min": 10,
+            "ingredients": [
+                {
+                    "name": "Copper Ingot",
+                    "req_amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Crude Oil",
+            "produced_in": "Oil Pump",
+            "qty": null,
+            "prod_time_sec": null,
+            "prod_per_min": null,
+            "ingredients": []
+        },
+        {
+            "name": "Crystal Oscillator",
+            "produced_in": "Manufacturer",
+            "qty": 2,
+            "prod_time_sec": 120,
+            "prod_per_min": 1,
+            "ingredients": [
+                {
+                    "name": "Quartz Crystal",
+                    "req_amount": 36
+                },
+                {
+                    "name": "Cable",
+                    "req_amount": 28
+                },
+                {
+                    "name": "Reinforced Iron Plates",
+                    "req_amount": 5
+                }
+            ]
+        },
+        {
+            "name": "Electromagnetic Control Rod",
+            "produced_in": "Assembler",
+            "qty": null,
+            "prod_time_sec": null,
+            "prod_per_min": null,
+            "ingredients": [
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                }
+            ]
+        },
+        {
+            "name": "Empty Canister",
+            "produced_in": "Constructor",
+            "qty": 4,
+            "prod_time_sec": 4,
+            "prod_per_min": 60,
+            "ingredients": [
+                {
+                    "name": "Plastic",
+                    "req_amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Encased Industrial Beams",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 10,
+            "prod_per_min": 6,
+            "ingredients": [
+                {
+                    "name": "Steel Beams",
+                    "req_amount": 4
+                },
+                {
+                    "name": "Concrete",
+                    "req_amount": 5
+                }
+            ]
+        },
+        {
+            "name": "Heat Sink",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 8,
+            "prod_per_min": 7.5,
+            "ingredients": [
+                {
+                    "name": "Alclad Aluminum Sheet",
+                    "req_amount": 5
+                },
+                {
+                    "name": "Copper Sheets",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Heavy Modular Frames",
+            "produced_in": "Manufacturer",
+            "qty": 1,
+            "prod_time_sec": 30,
+            "prod_per_min": 2,
+            "ingredients": [
+                {
+                    "name": "Modular Frames",
+                    "req_amount": 5
+                },
+                {
+                    "name": "Steel Pipes",
+                    "req_amount": 15
+                },
+                {
+                    "name": "Encased Industrial Beams",
+                    "req_amount": 5
+                },
+                {
+                    "name": "Screws",
+                    "req_amount": 100
+                }
+            ]
+        },
+        {
+            "name": "High-Speed Connector",
+            "produced_in": "Manufacturer",
+            "qty": 1,
+            "prod_time_sec": 16,
+            "prod_per_min": 3.75,
+            "ingredients": [
+                {
+                    "name": "Quickwire",
+                    "req_amount": 56
+                },
+                {
+                    "name": "Cable",
+                    "req_amount": 10
+                },
+                {
+                    "name": "Circuit Board",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Iron Ingot",
+            "produced_in": "Smelter",
+            "qty": 1,
+            "prod_time_sec": 2,
+            "prod_per_min": 30,
+            "ingredients": [
+                {
+                    "name": "Iron Ore",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Iron Ore",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Iron Plate",
+            "produced_in": "Constructor",
+            "qty": 2,
+            "prod_time_sec": 6,
+            "prod_per_min": 20,
+            "ingredients": [
+                {
+                    "name": "Iron Ingot",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Iron Rod",
+            "produced_in": "Constructor",
+            "qty": 1,
+            "prod_time_sec": 4,
+            "prod_per_min": 15,
+            "ingredients": [
+                {
+                    "name": "Iron Ingot",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Limestone Ore",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Modular Engine",
+            "produced_in": "Manufacturer",
+            "qty": 1,
+            "prod_time_sec": 60,
+            "prod_per_min": 1,
+            "ingredients": [
+                {
+                    "name": "Motors",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Rubber",
+                    "req_amount": 15
+                },
+                {
+                    "name": "Smart Plating",
+                    "req_amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Modular Frames",
+            "produced_in": "Assembler",
+            "qty": 2,
+            "prod_time_sec": 60,
+            "prod_per_min": 2,
+            "ingredients": [
+                {
+                    "name": "Reinforced Iron Plates",
+                    "req_amount": 3
+                },
+                {
+                    "name": "Iron Rod",
+                    "req_amount": 12
+                }
+            ]
+        },
+        {
+            "name": "Motors",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 12,
+            "prod_per_min": 5,
+            "ingredients": [
+                {
+                    "name": "Rotors",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Stators",
+                    "req_amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Nitric Acid",
+            "produced_in": "Blender",
+            "qty": 3,
+            "prod_time_sec": 6,
+            "prod_per_min": 30,
+            "ingredients": [
+                {
+                    "name": "Nitrogen",
+                    "req_amount": 12
+                },
+                {
+                    "name": "Water",
+                    "req_amount": 3
+                },
+                {
+                    "name": "Iron Plate",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Nitrogen Gas",
+            "produced_in": "Resource Well Extractor",
+            "qty": 60,
+            "prod_time_sec": null,
+            "prod_per_min": null,
+            "ingredients": []
+        },
+        {
+            "name": "Plastic",
+            "produced_in": "Refinery",
+            "qty": 2,
+            "prod_time_sec": 6,
+            "prod_per_min": 20,
+            "ingredients": [
+                {
+                    "name": "Crude Oil",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Pressure Conversion Cube",
+            "produced_in": "Assembler",
+            "qty": null,
+            "prod_time_sec": null,
+            "prod_per_min": null,
+            "ingredients": [
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                },
+                {
+                    "name": null,
+                    "req_amount": null
+                }
+            ]
+        },
+        {
+            "name": "Quartz Crystal",
+            "produced_in": "Constructor",
+            "qty": 3,
+            "prod_time_sec": 8,
+            "prod_per_min": 22.5,
+            "ingredients": [
+                {
+                    "name": "Raw Quartz",
+                    "req_amount": 5
+                }
+            ]
+        },
+        {
+            "name": "Quickwire",
+            "produced_in": "Constructor",
+            "qty": 5,
+            "prod_time_sec": 5,
+            "prod_per_min": 60,
+            "ingredients": [
+                {
+                    "name": "Caterium Ingot",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Radio Control Unit",
+            "produced_in": "Manufacturer",
+            "qty": 2,
+            "prod_time_sec": 48,
+            "prod_per_min": 2.5,
+            "ingredients": [
+                {
+                    "name": "Aluminum Casing",
+                    "req_amount": 32
+                },
+                {
+                    "name": "Crystal Oscillator",
+                    "req_amount": 1
+                },
+                {
+                    "name": "Computer",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Raw Quartz",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Reinforced Iron Plates",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 12,
+            "prod_per_min": 5,
+            "ingredients": [
+                {
+                    "name": "Iron Plate",
+                    "req_amount": 6
+                },
+                {
+                    "name": "Screws",
+                    "req_amount": 12
+                }
+            ]
+        },
+        {
+            "name": "Rotors",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 15,
+            "prod_per_min": 4,
+            "ingredients": [
+                {
+                    "name": "Iron Rod",
+                    "req_amount": 5
+                },
+                {
+                    "name": "Screws",
+                    "req_amount": 25
+                }
+            ]
+        },
+        {
+            "name": "Rubber",
+            "produced_in": "Refinery",
+            "qty": 2,
+            "prod_time_sec": 6,
+            "prod_per_min": 20,
+            "ingredients": [
+                {
+                    "name": "Crude Oil",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Screws",
+            "produced_in": "Constructor",
+            "qty": 4,
+            "prod_time_sec": 6,
+            "prod_per_min": 40,
+            "ingredients": [
+                {
+                    "name": "Iron Rod",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Silica",
+            "produced_in": "Constructor",
+            "qty": 5,
+            "prod_time_sec": 8,
+            "prod_per_min": 37.5,
+            "ingredients": [
+                {
+                    "name": "Raw Quartz",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Smart Plating",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 30,
+            "prod_per_min": 2,
+            "ingredients": [
+                {
+                    "name": "Reinforced Iron Plates",
+                    "req_amount": 1
+                },
+                {
+                    "name": "Rotors",
+                    "req_amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Stators",
+            "produced_in": "Assembler",
+            "qty": 1,
+            "prod_time_sec": 12,
+            "prod_per_min": 5,
+            "ingredients": [
+                {
+                    "name": "Steel Pipes",
+                    "req_amount": 3
+                },
+                {
+                    "name": "Wire",
+                    "req_amount": 8
+                }
+            ]
+        },
+        {
+            "name": "Steel Beams",
+            "produced_in": "Constructor",
+            "qty": 1,
+            "prod_time_sec": 4,
+            "prod_per_min": 15,
+            "ingredients": [
+                {
+                    "name": "Steel Ingot",
+                    "req_amount": 4
+                }
+            ]
+        },
+        {
+            "name": "Steel Ingot",
+            "produced_in": "Foundry",
+            "qty": 3,
+            "prod_time_sec": 4,
+            "prod_per_min": 45,
+            "ingredients": [
+                {
+                    "name": "Coal",
+                    "req_amount": 3
+                },
+                {
+                    "name": "Iron Ore",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Steel Pipes",
+            "produced_in": "Constructor",
+            "qty": 2,
+            "prod_time_sec": 6,
+            "prod_per_min": 20,
+            "ingredients": [
+                {
+                    "name": "Steel Ingot",
+                    "req_amount": 3
+                }
+            ]
+        },
+        {
+            "name": "Sulfur",
+            "produced_in": "Miner Mk2",
+            "qty": 2,
+            "prod_time_sec": 1,
+            "prod_per_min": 120,
+            "ingredients": []
+        },
+        {
+            "name": "Sulfuric Acid",
+            "produced_in": "Refinery",
+            "qty": 5,
+            "prod_time_sec": 6,
+            "prod_per_min": 50,
+            "ingredients": [
+                {
+                    "name": "Sulfur",
+                    "req_amount": 5
+                },
+                {
+                    "name": "Water",
+                    "req_amount": 5
+                }
+            ]
+        },
+        {
+            "name": "Super Computer",
+            "produced_in": "Manufacturer",
+            "qty": 1,
+            "prod_time_sec": 32,
+            "prod_per_min": 1.875,
+            "ingredients": [
+                {
+                    "name": "Computer",
+                    "req_amount": 2
+                },
+                {
+                    "name": "AI Limiter",
+                    "req_amount": 2
+                },
+                {
+                    "name": "High-Speed Connector",
+                    "req_amount": 3
+                },
+                {
+                    "name": "Plastic",
+                    "req_amount": 28
+                }
+            ]
+        },
+        {
+            "name": "Turbo Motor",
+            "produced_in": "Manufacturer",
+            "qty": 1,
+            "prod_time_sec": 32,
+            "prod_per_min": 1.875,
+            "ingredients": [
+                {
+                    "name": "Cooling System",
+                    "req_amount": 4
+                },
+                {
+                    "name": "Radio Control Unit",
+                    "req_amount": 2
+                },
+                {
+                    "name": "Motors",
+                    "req_amount": 4
+                },
+                {
+                    "name": "Rubber",
+                    "req_amount": 24
+                }
+            ]
+        },
+        {
+            "name": "Versatile Framework",
+            "produced_in": "Assembler",
+            "qty": 2,
+            "prod_time_sec": 24,
+            "prod_per_min": 5,
+            "ingredients": [
+                {
+                    "name": "Modular Frames",
+                    "req_amount": 1
+                },
+                {
+                    "name": "Steel Beams",
+                    "req_amount": 12
+                }
+            ]
+        },
+        {
+            "name": "Water",
+            "produced_in": "Water Pump",
+            "qty": null,
+            "prod_time_sec": null,
+            "prod_per_min": null,
+            "ingredients": []
+        },
+        {
+            "name": "Wire",
+            "produced_in": "Constructor",
+            "qty": 2,
+            "prod_time_sec": 4,
+            "prod_per_min": 30,
+            "ingredients": [
+                {
+                    "name": "Copper Ingot",
+                    "req_amount": 1
+                }
+            ]
+        }
+    ]
+}
